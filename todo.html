@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 8 - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <span class="brand">Assignment 5</span>
+        <div>
+            <a href="index.html">Task 0-1</a>
+            <a href="dom.html">Task 2-4</a>
+            <a href="events.html">Task 5-7</a>
+            <a href="todo.html" class="active">Task 8</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Task 8. To-Do List</h2>
+            <div class="row">
+                <input type="text" id="taskInput" placeholder="Enter a task..." style="flex:1">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <p class="hint">Click on a task to mark it as completed.</p>
+            <ul class="todo-list" id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
