@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2-4 - DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <span class="brand">Assignment 5</span>
+        <div>
+            <a href="index.html">Task 0-1</a>
+            <a href="dom.html" class="active">Task 2-4</a>
+            <a href="events.html">Task 5-7</a>
+            <a href="todo.html">Task 8</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Task 2. Changing Content</h2>
+            <p id="text">This is the old text.</p>
+            <button id="changeTextBtn">Change text</button>
+        </div>
+
+        <div class="card">
+            <h2>Task 3. Changing Styles</h2>
+            <div class="box" id="styleBox">Change my background and font size</div>
+            <div class="row">
+                <button id="colorBtn">Change color</button>
+                <button id="sizeBtn">Change font size</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Task 4. Creating & Removing Elements</h2>
+            <ul id="list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <div class="row">
+                <button id="addBtn">Add Item</button>
+                <button id="removeBtn">Remove Item</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>
