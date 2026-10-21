@@ -1,0 +1,107 @@
+:root {
+    --lime: #c6ff00;
+    --lime-dark: #a3d100;
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #f1f1f1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+nav {
+    background: var(--lime);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+nav .brand { font-weight: bold; font-size: 20px; color: #111; }
+nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+nav a:hover, nav a.active { background: #111; color: var(--lime); }
+
+.container { max-width: 700px; margin: 30px auto; padding: 0 15px; }
+
+.card {
+    background: var(--card);
+    border: 2px solid var(--lime);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+h2 { color: var(--lime); margin-top: 0; }
+p { line-height: 1.5; }
+
+button {
+    background: var(--lime);
+    color: #111;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover { background: var(--lime-dark); }
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 16px;
+}
+input:focus, select:focus { outline: none; border-color: var(--lime); }
+
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 12px; }
+
+.box {
+    background: #2a2a2a;
+    border: 2px dashed var(--lime);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul { padding-left: 20px; line-height: 1.8; }
+
+.result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--lime);
+}
+
+.todo-list { list-style: none; padding: 0; margin-top: 20px; }
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    border-left: 5px solid var(--lime);
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.todo-list span { cursor: pointer; flex: 1; margin-right: 10px; }
+.todo-list li.done span { text-decoration: line-through; color: #888; }
+.todo-list li.done { border-left-color: #555; }
+.hint { color: #aaa; font-size: 14px; }
